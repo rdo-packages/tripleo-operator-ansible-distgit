@@ -56,12 +56,18 @@ export PBR_VERSION=%{version}
 export SKIP_PIP_INSTALL=1
 %pyver_install
 
+# NOTE(aschultz): remove this once https://review.opendev.org/#/c/701479/ lands
+if [ ! -d %{buildroot}%{_datadir}/ansible/collections/ansible_collections ]; then
+    mkdir -p %{buildroot}%{_datadir}/ansible/collections/ansible_collections
+    mv %{buildroot}%{_datadir}/ansible/collections/tripleo %{buildroot}%{_datadir}/ansible/collections/ansible_collections/tripleo
+fi
+
 
 %files
 %doc README*
 %license LICENSE
 %{pyver_sitelib}/%{srcname}-*.egg-info
-%{_datadir}/ansible/collections/tripleo/operator/
+%{_datadir}/ansible/collections/ansible_collections/tripleo/operator/
 
 
 %changelog
