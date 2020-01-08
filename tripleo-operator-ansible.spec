@@ -61,7 +61,7 @@ export SKIP_PIP_INSTALL=1
 %doc README*
 %license LICENSE
 %{pyver_sitelib}/%{srcname}-*.egg-info
-%{_datadir}/ansible/collections/tripleo/operator/
+%{_datadir}/ansible/collections/ansible_collections/tripleo/operator/
 
 
 %changelog
