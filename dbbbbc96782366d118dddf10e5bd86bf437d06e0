@@ -1,0 +1,9 @@
+Code-Review+1: Daniel Pawlik <dpawlik@redhat.com>
+Code-Review+2: Emilien Macchi <emilien@redhat.com>
+Workflow+1: Emilien Macchi <emilien@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Tue, 21 Jan 2020 14:41:24 +0000
+Reviewed-on: https://review.rdoproject.org/r/24448
+Project: openstack/tripleo-operator-ansible-distgit
+Branch: refs/heads/rpm-master
