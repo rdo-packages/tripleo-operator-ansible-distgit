@@ -15,7 +15,7 @@ URL:            https://opendev.org/openstack/tripleo-operator-ansible
 Source0:        https://tarballs.openstack.org/%{collectionname}/%{collectionname}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
