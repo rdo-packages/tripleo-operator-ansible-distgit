@@ -50,7 +50,6 @@ Ansible Collection to perform TripleO related actions
 %build
 %pyver_build
 
-
 %install
 export PBR_VERSION=%{version}
 export SKIP_PIP_INSTALL=1
