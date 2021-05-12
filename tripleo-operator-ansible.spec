@@ -6,9 +6,9 @@
 %endif
 
 %global pyver_bin python%{pyver}
-%global pyver_sitelib %python%{pyver}_sitelib
-%global pyver_install %py%{pyver}_install
-%global pyver_build %py%{pyver}_build
+%global pyver_sitelib %{expand:%{python%{pyver}_sitelib}}
+%global pyver_install %{expand:%{py%{pyver}_install}}
+%global pyver_build %{expand:%{py%{pyver}_build}}
 # End of macros for py2/py3 compatibility
 
 %global srcname tripleo_operator_ansible
@@ -17,8 +17,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{collectionname}
-Version:        XXX
-Release:        XXX
+Version:        0.4.0
+Release:        1%{?dist}
 Summary:        Ansible Collection to perform TripleO related actions.
 
 Group:          System Environment/Base
@@ -65,4 +65,6 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
-
+* Wed May 12 2021 Chandan Kumar <chkumar@redhat.com> 0.4.0-1
+- Update to 0.4.0
+- Includes fixes for ftbfs
