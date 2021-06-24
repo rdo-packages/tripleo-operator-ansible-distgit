@@ -17,8 +17,13 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{collectionname}
+<<<<<<< HEAD   (715541 ManageSF commit)
 Version:        XXX
 Release:        XXX
+=======
+Version:        0.5.1
+Release:        1%{?dist}
+>>>>>>> CHANGE (439ec8 Bump the spec to 0.5.1)
 Summary:        Ansible Collection to perform TripleO related actions.
 
 Group:          System Environment/Base
@@ -65,4 +70,13 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+<<<<<<< HEAD   (715541 ManageSF commit)
 
+=======
+* Thu Jun 24 2021 Chandan Kumar (raukadah) <chkumar@redhat.com> 0.5.1-1
+- Update to 0.5.1
+
+* Wed May 12 2021 Chandan Kumar <chkumar@redhat.com> 0.4.0-1
+- Update to 0.4.0
+- Includes fixes for ftbfs
+>>>>>>> CHANGE (439ec8 Bump the spec to 0.5.1)
