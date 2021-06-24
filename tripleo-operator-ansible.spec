@@ -5,8 +5,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{collectionname}
-Version:        XXX
-Release:        XXX
+Version:        0.5.1
+Release:        1%{?dist}
 Summary:        Ansible Collection to perform TripleO related actions.
 
 Group:          System Environment/Base
@@ -48,4 +48,5 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
-
+* Thu Jun 24 2021 Chandan Kumar (raukadah) <chkumar@redhat.com> 0.5.1-1
+- Update to 0.5.1
