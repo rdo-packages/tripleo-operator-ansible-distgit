@@ -17,7 +17,11 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{collectionname}
+<<<<<<< HEAD   (28c8e1 Expand nested macros calls)
 Version:        0.4.0
+=======
+Version:        0.5.1
+>>>>>>> CHANGE (7ab5a8 Bump the spec to 0.5.1)
 Release:        1%{?dist}
 Summary:        Ansible Collection to perform TripleO related actions.
 
@@ -65,6 +69,11 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+<<<<<<< HEAD   (28c8e1 Expand nested macros calls)
 * Wed May 12 2021 Chandan Kumar <chkumar@redhat.com> 0.4.0-1
 - Update to 0.4.0
 - Includes fixes for ftbfs
+=======
+* Thu Jun 24 2021 Chandan Kumar (raukadah) <chkumar@redhat.com> 0.5.1-1
+- Update to 0.5.1
+>>>>>>> CHANGE (7ab5a8 Bump the spec to 0.5.1)
