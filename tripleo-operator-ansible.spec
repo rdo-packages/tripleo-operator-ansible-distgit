@@ -20,7 +20,7 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
 
-Requires: python3dist(ansible)
+Requires: (python3dist(ansible) or ansible-core >= 2.11)
 
 %description
 
