@@ -71,3 +71,4 @@ export SKIP_PIP_INSTALL=1
 * Wed May 12 2021 Chandan Kumar <chkumar@redhat.com> 0.4.0-1
 - Update to 0.4.0
 - Includes fixes for ftbfs
+# REMOVEME: error caused by commit https://opendev.org/openstack/tripleo-operator-ansible/commit/ade61b299ffa45c70b4dabf90567b88078859537
