@@ -50,3 +50,4 @@ export SKIP_PIP_INSTALL=1
 %changelog
 * Thu Jun 24 2021 Chandan Kumar (raukadah) <chkumar@redhat.com> 0.5.1-1
 - Update to 0.5.1
+# REMOVEME: error caused by commit https://opendev.org/openstack/tripleo-operator-ansible/commit/ade61b299ffa45c70b4dabf90567b88078859537
