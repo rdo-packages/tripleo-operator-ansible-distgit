@@ -5,8 +5,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           %{collectionname}
-Version:        XXX
-Release:        XXX
+Version:        0.9.0
+Release:        1%{?dist}
 Summary:        Ansible Collection to perform TripleO related actions.
 
 Group:          System Environment/Base
@@ -48,4 +48,7 @@ export SKIP_PIP_INSTALL=1
 
 
 %changelog
+* Thu Nov 03 2022 RDO <dev@lists.rdoproject.org> 0.9.0-1
+- Update to 0.9.0
+
 
